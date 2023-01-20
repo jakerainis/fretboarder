@@ -3,7 +3,8 @@
 }
 
 .neckContents {
-  @apply p-6 overflow-scroll border rounded-lg border-greyDark bg-baseMedium;
+  @apply p-6 overflow-auto bg-baseMedium border-y border-greyDark;
+  @apply sm:border sm:rounded-lg;
 }
 
 .neck {

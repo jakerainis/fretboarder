@@ -1,6 +1,7 @@
 .main {
-  @apply relative max-w-full px-12 py-8;
+  @apply relative max-w-full py-8;
+  @apply sm:px-12;
 }
 .util {
-  @apply flex justify-center w-full;
+  @apply flex justify-center w-full sm:bg-inherit;
 }
