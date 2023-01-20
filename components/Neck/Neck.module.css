@@ -1,0 +1,18 @@
+.neckContainer {
+  @apply flex justify-center mb-6;
+}
+
+.neckContents {
+  @apply p-6 overflow-scroll border rounded-lg border-greyDark bg-baseMedium;
+}
+
+.neck {
+  @apply p-2 rounded-lg bg-baseDark;
+}
+
+.neckUtils {
+  @apply flex justify-center mt-3;
+}
+.neckUtils button {
+  @apply flex justify-center mx-2 mt-1;
+}

@@ -1,0 +1,42 @@
+.fretRow {
+  @apply flex border-b border-baseLight last-of-type:border-0;
+}
+
+.fretRowUtils {
+  @apply flex items-center;
+}
+.fretRowUtils button {
+  @apply w-6 h-6 mx-3 transition-all duration-300 hover:text-yellowLight;
+}
+.fretRowUtils button.reorderFretRow {
+  @apply text-yellowDark hover:text-yellowLight;
+}
+.fretRowUtils button.removeFretRow {
+  @apply text-red hover:text-yellowLight;
+}
+.fretRowUtils select {
+  @apply px-2 py-1 text-white cursor-pointer bg-baseDark;
+}
+
+.fretRowSequence {
+  @apply flex ml-3 bg-opacity-25 bg-purple;
+}
+.fretRowMarkers {
+  @apply ml-[115px];
+}
+
+.fret {
+  @apply flex items-center justify-center w-12 h-12 text-center border-l-2 border-l-greyDark;
+}
+/* Account for open string */
+.fret:first-child {
+  @apply hidden;
+}
+/* Account for nut */
+.fret:nth-child(2) {
+  @apply border-l-4 border-greyLight;
+}
+/* Account for dotted fret markers */
+.fret.fretMarker {
+  @apply h-6 text-2xl text-white border-0 bg-baseDark;
+}
