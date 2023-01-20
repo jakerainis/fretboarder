@@ -30,6 +30,7 @@ export default function Neck({ neckId, strings }: NeckProps) {
           <div className={css.neck}>
             <ReactSortable
               animation={200}
+              filter="#nonDraggable"
               // ghostClass="opacity-50"
               list={stringObjectsArray}
               setList={(newStringObjectsArray) => {

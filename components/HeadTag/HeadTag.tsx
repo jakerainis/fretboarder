@@ -5,10 +5,10 @@ interface HeadTagProps {
   title?: string
 }
 
-export default function HeadTag({ description, title }: HeadTagProps) {
+export default function HeadTag({ description }: HeadTagProps) {
   return (
     <Head>
-      <title>Fretboarder {title ? ` - ${title}` : ''}</title>
+      <title>Fretboarder</title>
       <meta
         name="description"
         content={

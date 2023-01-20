@@ -41,7 +41,7 @@ export default function String({ neckId, rootNote, stringId }: StringProps) {
             ))}
           </select>
         </div>
-        <ul className={css.fretRowSequence}>
+        <ul className={css.fretRowSequence} id="nonDraggable">
           {stringSequence.map((note, index) => {
             return (
               <li
